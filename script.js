@@ -20,7 +20,7 @@ function letterCombinations(input) {
 			return;
 		}
 
-		let cuurentChar = input[currentIndex];
+		let currentChar = input[currentIndex];
 		for(let i=0;i< table[currentChar].length;i++){
 			solve(currentIndex +1, calculatedString + table[currentChar][i]);
 		}
